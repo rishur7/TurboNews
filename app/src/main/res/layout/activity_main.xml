@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#48426d">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="65dp" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:padding="10dp"
+                android:onClick="all"
+                android:layout_marginLeft="5dp"
+                android:text="All"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:background="@drawable/custom_button"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:text="Foreign"
+                android:onClick="foreign"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:layout_marginLeft="5dp"
+                android:text="Sports"
+                android:onClick="sports"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="entertainment"
+                android:text="Entertainment"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:layout_marginLeft="5dp"
+                android:text="Science"
+                android:onClick="science"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:layout_marginLeft="5dp"
+                android:text="Technology"
+                android:onClick="tech"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:layout_marginLeft="5dp"
+                android:text="Health"
+                android:onClick="health"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:padding="10dp"
+                android:backgroundTint="@drawable/pressedbutton"
+                android:layout_marginLeft="5dp"
+                android:text="Business"
+                android:onClick="business"
+                android:textAllCaps="false"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
